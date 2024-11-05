@@ -109,12 +109,18 @@ main {
 }
 
 .card {
-  padding: var(--space-xxl);
+  padding: var(--space-xl);
   background-color: var(--clr-neutral-800);
   border-radius: var(--space-md);
   margin-bottom: 5rem;
   max-width: 38.4rem;
   width: 87.2%;
+}
+
+@media (min-width: 500px) {
+  .card {
+    padding: var(--space-xxl);
+  }
 }
 
 .card__inner {
@@ -138,6 +144,12 @@ main {
 .card__location {
   color: var(--clr-primary-400);
   font-weight: bold;
+}
+
+.card__description {
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 150%;
 }
 
 .links {
